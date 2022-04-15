@@ -1,86 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <title>Document</title>
-   <link rel="stylesheet" href="css/libs.min.css">
-   <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-   <div class="wrapper">
+  <body>
+    <div class="wrapper">
       <div class="content">
-         <!-- **************** start header ****************-->
-         <header class="header">
-            <div class="header__top">
-               <div class="container">
-                  <div class="header__top-inner">
-                     <a class="header__top-logo" href="#">
-                        <img src="images/logo.png" alt="">
-                     </a>
-                     <div class="header__top-box">
-                        <div class="header__top-address">
-                           <span>
-                              <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M4 0C1.9325 0 0.25 1.69417 0.25 3.77708C0.25 6.73667 3.6475 9.7925 3.79208 9.92083C3.85167 9.97375 3.92583 10 4 10C4.07417 10 4.14833 9.97375 4.20792 9.92125C4.3525 9.7925 7.75 6.73667 7.75 3.77708C7.75 1.69417 6.0675 0 4 0ZM4 5.83333C2.85125 5.83333 1.91667 4.89875 1.91667 3.75C1.91667 2.60125 2.85125 1.66667 4 1.66667C5.14875 1.66667 6.08333 2.60125 6.08333 3.75C6.08333 4.89875 5.14875 5.83333 4 5.83333Z" fill="#28292D"/>
-                              </svg>
-                           </span>
-                           г. Калининград ул. Независимости, д. 10
-                        </div>
-                        <div class="header__top-phone">
-                           <span>
-                              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.19758 6.56384C8.58534 6.56384 7.9842 6.46808 7.41454 6.27983C7.1354 6.18462 6.79225 6.27196 6.62188 6.44694L5.49749 7.29574C4.1935 6.59967 3.39028 5.7967 2.70372 4.50251L3.52754 3.40741C3.74158 3.19366 3.81835 2.88142 3.72637 2.58846C3.53731 2.0158 3.44127 1.41494 3.44127 0.802446C3.44129 0.359973 3.08132 0 2.63887 0H0.80242C0.359973 0 0 0.359973 0 0.80242C0 5.87402 4.12598 9.99997 9.19758 9.99997C9.64003 9.99997 10 9.64 10 9.19755V7.36623C9.99997 6.92381 9.64 6.56384 9.19758 6.56384Z" fill="#28292D"/>
-                              </svg>
-                           </span>
-                           <a href="tel:+7 (800) 960-80-00">+7 (800) 960-80-00</a>
-                           <p>Пн-Пт 09:00 - 21:00</p>
-                        </div>
-                        <button class="header__top-btn">
-                           Оставить заявку
-                        </button>
-                     </div>
+        <!-- **************** start header ****************-->
+        <header class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="header__top-inner">
+                <a class="header__top-logo" href="#">
+                  <img src="images/logo.png" alt="" />
+                </a>
+                <div class="header__top-box">
+                  <div class="header__top-address">
+                    <span>
+                      <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 0C1.9325 0 0.25 1.69417 0.25 3.77708C0.25 6.73667 3.6475 9.7925 3.79208 9.92083C3.85167 9.97375 3.92583 10 4 10C4.07417 10 4.14833 9.97375 4.20792 9.92125C4.3525 9.7925 7.75 6.73667 7.75 3.77708C7.75 1.69417 6.0675 0 4 0ZM4 5.83333C2.85125 5.83333 1.91667 4.89875 1.91667 3.75C1.91667 2.60125 2.85125 1.66667 4 1.66667C5.14875 1.66667 6.08333 2.60125 6.08333 3.75C6.08333 4.89875 5.14875 5.83333 4 5.83333Z"
+                          fill="#28292D"
+                        />
+                      </svg>
+                    </span>
+                    г. Калининград ул. Независимости, д. 10
                   </div>
-               </div>
+                  <div class="header__top-phone">
+                    <span>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.19758 6.56384C8.58534 6.56384 7.9842 6.46808 7.41454 6.27983C7.1354 6.18462 6.79225 6.27196 6.62188 6.44694L5.49749 7.29574C4.1935 6.59967 3.39028 5.7967 2.70372 4.50251L3.52754 3.40741C3.74158 3.19366 3.81835 2.88142 3.72637 2.58846C3.53731 2.0158 3.44127 1.41494 3.44127 0.802446C3.44129 0.359973 3.08132 0 2.63887 0H0.80242C0.359973 0 0 0.359973 0 0.80242C0 5.87402 4.12598 9.99997 9.19758 9.99997C9.64003 9.99997 10 9.64 10 9.19755V7.36623C9.99997 6.92381 9.64 6.56384 9.19758 6.56384Z"
+                          fill="#28292D"
+                        />
+                      </svg>
+                    </span>
+                    <a href="tel:+7 (800) 960-80-00">+7 (800) 960-80-00</a>
+                    <p>Пн-Пт 09:00 - 21:00</p>
+                  </div>
+                  <button class="header__top-btn">Оставить заявку</button>
+                </div>
+              </div>
             </div>
-            <div class="header__menu">
-               <div class="container">
-                  <nav class="menu">
-                     <ul class="menu__list">
-                        <li class="menu__link menu__link-xs"><a href="#">Главная</a></li>
-                        <li class="menu__link menu__link-l"><a href="#">Мебельный поролон</a></li>
-                        <li class="menu__link menu__link-l"><a href="#">Технический поролон  </a></li>
-                        <li class="menu__link menu__link-xs"><a href="#">О поролоне</a></li>
-                        <li class="menu__link menu__link-xs"><a href="#">О поролоне</a></li>
-                        <li class="menu__link menu__link-m"><a href="#">Оплата и доставка</a></li>
-                        <li class="menu__link menu__link-s"><a href="#">Контакты</a></li>
-                     </ul>
-                  </nav>
-               </div>
+          </div>
+          <div class="header__menu">
+            <div class="container">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__link menu__link-xs"><a href="#">Главная</a></li>
+                  <li class="menu__link menu__link-l"><a href="#">Мебельный поролон</a></li>
+                  <li class="menu__link menu__link-l"><a href="#">Технический поролон </a></li>
+                  <li class="menu__link menu__link-xs"><a href="#">О поролоне</a></li>
+                  <li class="menu__link menu__link-xs"><a href="#">О поролоне</a></li>
+                  <li class="menu__link menu__link-m"><a href="#">Оплата и доставка</a></li>
+                  <li class="menu__link menu__link-s"><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
             </div>
-            <div class="header__content">
-
+          </div>
+          <div class="header__content"></div>
+        </header>
+        <!-- **************** end header ****************-->
+        <main>
+          <!-- **************** start products ****************-->
+          <section class="products">
+            <div class="container">
+              <div class="products__title title">Мы предлагаем вам большой выбор товаров</div>
+              <div class="products__text text">
+                Как принято считать, явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть в равной степени предоставлены сами себе. Для
+                современного мира экономическая повестка сегодняшнего дня предоставляет широкие возможности для благоприятных перспектив. А ещё интерактивные прототипы формируют глобальную
+                экономическую сеть и при этом - разоблачены.
+              </div>
+              <div class="products__inner">
+                <div class="products__furniture">
+                  <div class="products__furniture-title">Мебельный поролон</div>
+                  <div class="products__furniture-inner">
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-1.jpg)"></div>
+                        <div class="products__item-text">Мебельный поролон</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-2.jpg)"></div>
+                        <div class="products__item-text">Поролон для матрасов</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-3.jpg)"></div>
+                        <div class="products__item-text">Поролон с памятью</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-4.jpg)"></div>
+                        <div class="products__item-text">Поролоновая крошка</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__technical">
+                  <div class="products__technical-title">Технический поролон</div>
+                  <div class="products__technical-inner">
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-5.jpg)"></div>
+                        <div class="products__item-text">Упаковочный поролон</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-6.jpg)"></div>
+                        <div class="products__item-text">Акустический поролон</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-7.jpg)"></div>
+                        <div class="products__item-text">Губки поролоновые</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-8.jpg)"></div>
+                        <div class="products__item-text">Малярные шубки и валики</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-9.jpg)"></div>
+                        <div class="products__item-text">Поролон для автомобиля</div>
+                      </a>
+                    </div>
+                    <div class="products__item-wrapper">
+                      <a class="products__item products__furniture-item" href="#">
+                        <div class="products__item-img" style="background-image: url(images/content-products/item-10.jpg)"></div>
+                        <div class="products__item-text">Маты для спортивных залов</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-         </header> 
-         <!-- **************** end header ****************-->
+          </section>
+          <!-- **************** end header ****************-->
 
+          <!-- **************** start advantage ****************-->
+          <section class="advantage">
+            <div class="container">
+              <div class="advantage__title title">Преимущества поролоновых изделий</div>
+              <div class="advantage__inner">
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-1.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Ортопедические свойства</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-2.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Прочность</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-3.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Эластичность</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-4.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Хороший воздухообмен</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-5.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Пористость</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-6.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Термоустойчивость</div>
+                </div>
+                <div class="advantage__item">
+                  <div class="advantage__item-icon">
+                    <img src="images/advantage-icon/icon-7.svg" alt="" />
+                  </div>
+                  <div class="advantage__item-text">Отличные поддерживающие качества</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- **************** end advantage ****************-->
 
+          <!-- **************** start header ****************-->
+          <section class="order" style="background-image: url(images/order-bg.jpg)">
+            <div class="container">
+              <div class="order__inner">
+                <div class="order__text"><span>Заказать услугу</span> вы можете, позвонив по телефону или оставив заявку
+                </div>
+                <div class="order__box">
+                   <a href="tel:+7 800 960 80 00" class="order__box-phone">
+                     +7 800 960 80 00
+                   </a>
+                   <button class="order__box-btn">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- **************** end header ****************-->
+
+          <!-- **************** start header ****************-->
+          <!-- **************** end header ****************-->
+        </main>
       </div>
-      <footer class="footer">
+      <footer class="footer"></footer>
+    </div>
 
-      </footer>
-   </div>
-
-
-
-
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/libs.min.js"></script>
-   <script src="js/main.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
