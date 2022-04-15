@@ -1,0 +1,20 @@
+@mixin f900 {
+   font-family: 'Proxima Nova Black';
+   font-weight: 900;
+}
+@mixin f700 {
+   font-family: 'Proxima Nova Bold';
+   font-weight: 700;
+}
+@mixin f600 {
+   font-family: 'Proxima Nova Semibold';
+   font-weight: 600;
+}
+@mixin f400 {
+   font-family: 'Proxima Nova Regular';
+   font-weight: 400;
+}
+@mixin f300 {
+   font-family: 'Proxima Nova Light';
+   font-weight: 300;
+}

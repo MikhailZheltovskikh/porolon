@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+  // position: relative;
+  // overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  @include f400;
+  color: #28292D;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.title {
+  @include f700;
+  font-size: 48px;
+}
+.text {
+  @include f400;
+  font-size: 14px;
+  line-height: 250%;
+}
