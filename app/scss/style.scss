@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.header__logo-white{
-   display: none;
+.header__logo-white {
+  display: none;
 }
 .header__top-box {
   display: flex;
@@ -95,17 +95,17 @@
   }
 }
 .header__menu-btn {
-   display: none;
-   cursor: pointer;
-   div {
-     background-color: #333;
-     height: 2px;
-     width: 30px;
-     & + div {
-       margin-top: 10px;
-     }
-   }
- }
+  display: none;
+  cursor: pointer;
+  div {
+    background-color: #333;
+    height: 2px;
+    width: 30px;
+    & + div {
+      margin-top: 10px;
+    }
+  }
+}
 .menu__link-xs {
   max-width: 170px;
   width: 100%;
@@ -346,23 +346,23 @@
   margin-bottom: 40px;
   .slick-next.slick-next.slick-arrow,
   .slick-prev.slick-arrow {
-   border: none;
-   cursor: pointer;
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background-color: #ededed;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ededed;
   }
   .slick-prev {
-   position: absolute;
-   top: -35px;
-   right: 70px;
- }
- .slick-next {
-   position: absolute;
-   top: -35px;
-   right: 33px;
- }
+    position: absolute;
+    top: -35px;
+    right: 70px;
+  }
+  .slick-next {
+    position: absolute;
+    top: -35px;
+    right: 33px;
+  }
 }
 .certificates__item {
   padding: 10px;
@@ -669,8 +669,87 @@
 }
 /* **************** end footer **************** */
 
-/* **************** start order **************** */
-/* **************** end order **************** */
+/* **************** start popup **************** */
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.popup.active {
+  display: block;
+}
+.popup__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.popup__body {
+  margin: auto;
+  width: 600px;
+  background-color: #fff;
+  padding: 60px 90px;
+  position: relative;
+}
+.popup__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.popup__body {
+  text-align: center;
+  .popup__title {
+    margin-bottom: 18px;
+    font-size: 36px;
+  }
+  .popup__text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 35px;
+  }
+  input {
+    width: 100%;
+    padding: 22px 26px;
+    border: 1px solid #e3e3e3;
+    &::placeholder {
+      font-size: 12px;
+      color: #28292d;
+    }
+    & + input {
+      margin-top: 7px;
+    }
+  }
+  .checkbox {
+    margin-top: 13px;
+    color: #28292d;
+    text-align: left;
+  }
+  .popup__form-btn {
+    width: 100%;
+    padding: 25px;
+    font-size: 18px;
+    @include f700;
+    color: #fff;
+    margin-top: 23px;
+    background: linear-gradient(95.94deg, #f19217 17.38%, #ea611b 105.13%);
+    border: none;
+  }
+  .checkbox input[type="checkbox"] + span {
+    border: 1px solid #dedede;
+  }
+  .popup__form-checkbox{
+   font-size: 10px;
+  }
+  .popup__politic{
+     color: #f39b14;
+  }
+}
+/* **************** end popup **************** */
 
 /* **************** start order **************** */
 /* **************** end order **************** */

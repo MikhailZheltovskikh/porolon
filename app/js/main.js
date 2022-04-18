@@ -25,26 +25,6 @@ $(".header__slider-inner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  // responsive: [
-  //    {
-  //       breakpoint: 1251,
-  //       settings: {
-  //          slidesToShow: 3
-  //       },
-  //    },
-  //    {
-  //       breakpoint: 901,
-  //       settings: {
-  //          slidesToShow: 2
-  //       }
-  //    },
-  //    {
-  //       breakpoint: 731,
-  //       settings: {
-  //          slidesToShow: 1
-  //       },
-  //    },
-  // ]
 });
 $(".certificates__slider").slick({
   dots: false,
@@ -166,3 +146,21 @@ window.addEventListener("DOMContentLoaded", function() {
  });
 
 });
+
+// popup
+const openPopup = document.querySelectorAll('.openpopup');
+const closePopup = document.querySelector('.popup__close');
+const popup = document.querySelector('.popup');
+
+openPopup.forEach(function(item){
+   item.addEventListener('click', function(e){
+      e.preventDefault();
+      popup.classList.add('active');
+   });
+})
+
+
+
+closePopup.addEventListener('click', () => {
+   popup.classList.remove('active');
+})
